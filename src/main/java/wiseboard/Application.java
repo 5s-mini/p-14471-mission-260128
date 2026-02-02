@@ -1,7 +1,10 @@
 package wiseboard;
 
+import controller.WiseController;
+
 public class Application {
     public static void main(String[] args) {
-        System.out.println("Wiseboard Application Started");
+        WiseController wiseController = new WiseController();
+        wiseController.Run();
     }
 }
