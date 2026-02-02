@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="73c306cc-bfd8-4b79-a79e-3028cde4c798" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/WiseController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/wiseboard/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wiseboard/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,6 +89,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/dncls/Desktop/GitHub/p-14471-mission-260128",
+    "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "C:/Users/dncls/Desktop/GitHub/p-14471-mission-260128/src/main/java/org/example/Main.java",
     "project.structure.last.edited": "모듈",
     "project.structure.proportion": "0.15",
@@ -116,7 +116,7 @@
       <updated>1769996503666</updated>
       <workItem from="1769996504745" duration="85000" />
       <workItem from="1769996642095" duration="71000" />
-      <workItem from="1769996723594" duration="1380000" />
+      <workItem from="1769996723594" duration="3535000" />
     </task>
     <servers />
   </component>
