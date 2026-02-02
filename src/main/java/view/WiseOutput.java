@@ -7,6 +7,7 @@ public class WiseOutput {
     private static final String QUOTE_PROMPT = "명언 : ";
     private static final String AUTHOR_PROMPT = "작가 : ";
     private static final String LIST_HEADER = "번호 / 작가 / 명언";
+
     private static final String REGISTERED_OUTPUT = "번 명언이 등록되었습니다.";
     private static final String DELETED_OUTPUT = "번 명언이 삭제되었습니다.";
     private static final String NOT_FOUND_OUTPUT = "번 명언은 존재하지 않습니다.";

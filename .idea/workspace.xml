@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="73c306cc-bfd8-4b79-a79e-3028cde4c798" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/WiseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/WiseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/input/WiseInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/input/WiseInput.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/view/WiseOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/WiseOutput.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -119,7 +121,7 @@
       <updated>1769996503666</updated>
       <workItem from="1769996504745" duration="85000" />
       <workItem from="1769996642095" duration="71000" />
-      <workItem from="1769996723594" duration="4275000" />
+      <workItem from="1769996723594" duration="5084000" />
     </task>
     <servers />
   </component>

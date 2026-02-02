@@ -9,7 +9,7 @@ public class WiseController {
 
     public  WiseController() {
         WiseOutput wiseOutput = new WiseOutput();
-        this.wiseInput = new WiseInput();
+        this.wiseInput = new WiseInput(wiseOutput);
     }
 
     public void Run() {
