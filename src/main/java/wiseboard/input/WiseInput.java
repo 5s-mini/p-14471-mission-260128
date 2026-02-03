@@ -1,6 +1,7 @@
 package wiseboard.input;
 
 import java.util.Scanner;
+import wiseboard.repository.WiseRepository;
 import wiseboard.service.WiseService;
 import wiseboard.view.WiseOutput;
 
@@ -29,6 +30,9 @@ public class WiseInput {
     public WiseInput(WiseOutput wiseOutput) {
         this.wiseOutput = wiseOutput;
         this.scanner = new Scanner(System.in);
+
+        WiseRepository wiseRepository = new WiseRepository();
+        this.wiseService = new WiseService(wiseRepository);
     }
 
     public void Start() {
@@ -102,15 +106,56 @@ public class WiseInput {
         if (IsBlank(content)) {
             throw new IllegalArgumentException(ERROR_PREFIX + BLANK_CONTENT_ERROR);
         }
+
+        if (!IsAllowedText(content)) {
+            throw new IllegalArgumentException(ERROR_PREFIX + INVALID_CONTENT_CHAR_ERROR);
+        }
     }
 
     private void ValidateAuthor(String author) {
         if (IsBlank(author)) {
             throw new IllegalArgumentException(ERROR_PREFIX + BLANK_AUTHOR_ERROR);
         }
+
+        if (!IsAllowedText(author)) {
+            throw new IllegalArgumentException(ERROR_PREFIX + INVALID_AUTHOR_CHAR_ERROR);
+        }
     }
 
     private boolean IsBlank(String value) {
         return value == null || value.trim().isEmpty();
+    }
+
+    private boolean IsAllowedText(String value) {
+        int i = 0;
+
+        while (i < value.length()) {
+            char c = value.charAt(i);
+
+            if (IsKorean(c) || IsEnglish(c) || IsDigit(c) || IsSpace(c)) {
+                i++;
+                continue;
+            }
+
+            return false;
+        }
+
+        return true;
+    }
+
+    private boolean IsKorean(char c) {
+        return c >= '가' && c <= '힣';
+    }
+
+    private boolean IsEnglish(char c) {
+        return (c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z');
+    }
+
+    private boolean IsDigit(char c) {
+        return c >= '0' && c <= '9';
+    }
+
+    private boolean IsSpace(char c) {
+        return c == ' ';
     }
 }
