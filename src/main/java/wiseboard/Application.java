@@ -1,6 +1,6 @@
 package wiseboard;
 
-import controller.WiseController;
+import wiseboard.controller.WiseController;
 
 public class Application {
     public static void main(String[] args) {

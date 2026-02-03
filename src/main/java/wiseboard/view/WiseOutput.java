@@ -1,4 +1,4 @@
-package view;
+package wiseboard.view;
 
 public class WiseOutput {
 

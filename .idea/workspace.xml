@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="73c306cc-bfd8-4b79-a79e-3028cde4c798" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/wiseboard/repository/WiseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/wiseboard/service/WiseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/WiseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/WiseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/input/WiseInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/input/WiseInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/WiseOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/WiseOutput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/WiseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wiseboard/controller/WiseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/input/WiseInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wiseboard/input/WiseInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/WiseOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wiseboard/view/WiseOutput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/wiseboard/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wiseboard/Application.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,28 +86,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Gradle.p-14471-mission-260128 [:org.example.Main.main()].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/dncls/Desktop/GitHub/p-14471-mission-260128",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/dncls/Desktop/GitHub/p-14471-mission-260128/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "모듈",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
-    "vue.rearranger.settings.migration": "true",
-    "애플리케이션.Application.executor": "Run"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Gradle.p-14471-mission-260128 [:org.example.Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/dncls/Desktop/GitHub/p-14471-mission-260128&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/dncls/Desktop/GitHub/p-14471-mission-260128/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;모듈&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
+    &quot;애플리케이션.Application.executor&quot;: &quot;Run&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -121,7 +125,8 @@
       <updated>1769996503666</updated>
       <workItem from="1769996504745" duration="85000" />
       <workItem from="1769996642095" duration="71000" />
-      <workItem from="1769996723594" duration="5084000" />
+      <workItem from="1769996723594" duration="5638000" />
+      <workItem from="1770081321198" duration="1242000" />
     </task>
     <servers />
   </component>

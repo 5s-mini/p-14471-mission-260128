@@ -1,7 +1,7 @@
-package controller;
+package wiseboard.controller;
 
-import input.WiseInput;
-import view.WiseOutput;
+import wiseboard.input.WiseInput;
+import wiseboard.view.WiseOutput;
 
 public class WiseController {
 

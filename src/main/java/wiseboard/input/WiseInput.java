@@ -1,7 +1,9 @@
-package input;
+package wiseboard.input;
 
 import java.util.Scanner;
-import view.WiseOutput;
+import wiseboard.service.WiseService;
+import wiseboard.view.WiseOutput;
+
 
 public class WiseInput {
 
@@ -22,6 +24,7 @@ public class WiseInput {
 
     private final Scanner scanner;
     private final WiseOutput wiseOutput;
+    private final WiseService wiseService;
 
     public WiseInput(WiseOutput wiseOutput) {
         this.wiseOutput = wiseOutput;
@@ -71,6 +74,12 @@ public class WiseInput {
 
         wiseOutput.AuthorPrompt();
         String author = scanner.nextLine().trim();
+
+        ValidateContent(content);
+        ValidateAuthor(author);
+
+        Integer id = wiseService.Register(author, content);
+        wiseOutput.Registered(id);
     }
 
     private void List() {
@@ -81,11 +90,27 @@ public class WiseInput {
 
     }
 
-    private void Delete() {
+    private void Delete(String command) {
 
     }
 
-    private void Modify() {
+    private void Modify(String command) {
 
+    }
+
+    private void ValidateContent(String content) {
+        if (IsBlank(content)) {
+            throw new IllegalArgumentException(ERROR_PREFIX + BLANK_CONTENT_ERROR);
+        }
+    }
+
+    private void ValidateAuthor(String author) {
+        if (IsBlank(author)) {
+            throw new IllegalArgumentException(ERROR_PREFIX + BLANK_AUTHOR_ERROR);
+        }
+    }
+
+    private boolean IsBlank(String value) {
+        return value == null || value.trim().isEmpty();
     }
 }
