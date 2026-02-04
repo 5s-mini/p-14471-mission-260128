@@ -16,7 +16,7 @@ public class WiseInput {
     private static final String MODIFY_PREFIX = "수정?id=";
     private static final String BUILD_COMMAND = "빌드";
 
-    private static final String ERROR_PREFIX = "[ERROR] ";
+    public static final String ERROR_PREFIX = "[ERROR] ";
     private static final String INVALID_COMMAND_ERROR = "알 수 없는 명령어입니다. 사용 가능한 명령: 등록, 목록, 삭제?id={번호}, 수정?id={번호}, 종료";
     private static final String INVALID_ID_ERROR = "id는 1 이상의 정수여야 합니다. 예) 삭제?id=1, 수정?id=2";
     private static final String BLANK_CONTENT_ERROR = "명언 내용은 공백일 수 없습니다. 한글/영문/숫자/공백만 입력 가능합니다.";
