@@ -1,5 +1,7 @@
 package wiseboard.view;
 
+import wiseboard.domain.WiseQuote;
+
 public class WiseOutput {
 
     private static final String APP_TITLE = "== 명언 앱 ==";
@@ -59,6 +61,17 @@ public class WiseOutput {
 
     public void RenewalJson() {
         System.out.println(RENEWAL_JSON_OUTPUT);
+    }
+
+    public void ListRows(WiseQuote[] quotes) {
+        int i = 0;
+        int n = quotes.length;
+
+        while (i < n) {
+            WiseQuote quote = quotes[i];
+            System.out.println(quote.id() + " / " + quote.author() + " / " + quote.content());
+            i++;
+        }
     }
 
     public void EmptyList() {

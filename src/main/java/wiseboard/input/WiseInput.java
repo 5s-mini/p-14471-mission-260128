@@ -1,6 +1,7 @@
 package wiseboard.input;
 
 import java.util.Scanner;
+import wiseboard.domain.WiseQuote;
 import wiseboard.repository.WiseRepository;
 import wiseboard.service.WiseService;
 import wiseboard.view.WiseOutput;
@@ -87,7 +88,16 @@ public class WiseInput {
     }
 
     private void List() {
+        wiseOutput.ListHeader();
 
+        WiseQuote[] quotes = wiseService.FindAllDesc();
+
+        if (quotes.length == 0) {
+            wiseOutput.EmptyList();
+            return;
+        }
+
+        wiseOutput.ListRows(quotes);
     }
 
     private void Build() {
@@ -95,11 +105,56 @@ public class WiseInput {
     }
 
     private void Delete(String command) {
+        Integer id = ExtractId(command, DELETE_PREFIX);
 
+        boolean deleted = wiseService.DeleteById(id);
+
+        if (deleted) {
+            wiseOutput.Deleted(id);
+            return;
+        }
+
+        wiseOutput.NotFound(id);
     }
 
     private void Modify(String command) {
+        Integer id = ExtractId(command, MODIFY_PREFIX);
 
+        WiseQuote quote = wiseService.FindById(id);
+
+        if (quote == null) {
+            wiseOutput.NotFound(id);
+            return;
+        }
+
+        wiseOutput.ModifyExistingContent(quote.content());
+        wiseOutput.QuotePrompt();
+        String newContent = scanner.nextLine().trim();
+
+        wiseOutput.ModifyExistingAuthor(quote.author());
+        wiseOutput.AuthorPrompt();
+        String newAuthor = scanner.nextLine().trim();
+
+        ValidateContent(newContent);
+        ValidateAuthor(newAuthor);
+
+        wiseService.Modify(id, newAuthor, newContent);
+    }
+
+    private Integer ExtractId(String command, String prefix) {
+        String value = command.substring(prefix.length()).trim();
+
+        try {
+            int id = Integer.parseInt(value);
+
+            if (id < 1) {
+                throw new IllegalArgumentException(ERROR_PREFIX + INVALID_ID_ERROR);
+            }
+
+            return id;
+        } catch (NumberFormatException e) {
+            throw new IllegalArgumentException(ERROR_PREFIX + INVALID_ID_ERROR);
+        }
     }
 
     private void ValidateContent(String content) {
