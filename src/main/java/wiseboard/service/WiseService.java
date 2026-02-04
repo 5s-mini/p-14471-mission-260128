@@ -31,4 +31,8 @@ public class WiseService {
     public boolean Modify(Integer id, String author, String content) {
         return wiseRepository.ReplaceById(id, author, content);
     }
+
+    public void Build() {
+        wiseRepository.BuildDataJson();
+    }
 }

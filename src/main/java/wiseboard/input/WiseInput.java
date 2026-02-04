@@ -101,7 +101,8 @@ public class WiseInput {
     }
 
     private void Build() {
-
+        wiseService.Build();
+        wiseOutput.RenewalJson();
     }
 
     private void Delete(String command) {

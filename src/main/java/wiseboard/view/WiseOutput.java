@@ -16,7 +16,7 @@ public class WiseOutput {
     private static final String EXISTING_CONTENT_PREFIX = "명언(기존) : ";
     private static final String EXISTING_AUTHOR_PREFIX = "작가(기존) : ";
     private static final String EMPTY_LIST_OUTPUT = "등록된 명언이 없습니다.";
-    private static final String RENEWAL_JSON_OUTPUT = "data.json 파일이 갱신되었습니다.";
+    private static final String RENEWAL_JSON_OUTPUT = "data.json 파일의 내용이 갱신되었습니다.";
 
     public void AppTitle() {
         System.out.println(APP_TITLE);

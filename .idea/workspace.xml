@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73c306cc-bfd8-4b79-a79e-3028cde4c798" name="변경" comment="" />
+    <list default="true" id="73c306cc-bfd8-4b79-a79e-3028cde4c798" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/wiseboard/input/WiseInputPersistenceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/wiseboard/input/WiseInput.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/wiseboard/input/WiseInput.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/wiseboard/repository/WiseRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/wiseboard/repository/WiseRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/wiseboard/service/WiseService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/wiseboard/service/WiseService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/wiseboard/input/WiseInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wiseboard/input/WiseInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/wiseboard/service/WiseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wiseboard/service/WiseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/wiseboard/view/WiseOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wiseboard/view/WiseOutput.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -81,6 +90,7 @@
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Gradle.p-14471-mission-260128 [:org.example.Main.main()].executor": "Run",
+    "JUnit.WiseInputPersistenceTest.executor": "Run",
     "JUnit.WiseInputTest.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -120,7 +130,7 @@
       <workItem from="1769996642095" duration="71000" />
       <workItem from="1769996723594" duration="5638000" />
       <workItem from="1770081321198" duration="3614000" />
-      <workItem from="1770163373469" duration="3768000" />
+      <workItem from="1770163373469" duration="8730000" />
     </task>
     <servers />
   </component>
